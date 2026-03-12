@@ -1,0 +1,9 @@
+name = "mantrova-studio-api"
+main = "src/index.js"
+compatibility_date = "2026-03-12"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mantrova_studio"
+database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"
