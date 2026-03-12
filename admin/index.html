@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANTROVA STUDIO — панель управления</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="admin">
+  <div class="page-bg"></div>
+  <main class="shell admin-shell">
+    <section class="panel login-panel" id="adminLoginBox">
+      <p class="eyebrow">админка</p>
+      <h1>Панель управления</h1>
+      <p>Введите пароль администратора.</p>
+      <form id="adminLoginForm" class="auth-form">
+        <label><span>Пароль</span><input type="password" name="password" required></label>
+        <button class="btn wide" type="submit">Войти</button>
+      </form>
+    </section>
+
+    <section id="adminApp" class="hidden">
+      <header class="topbar panel admin-topbar">
+        <div>
+          <p class="eyebrow">MANTROVA STUDIO</p>
+          <h1>Панель управления</h1>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn btn-light" href="../">Открыть сайт</a>
+          <a class="btn btn-light" href="../call-center/">Колл-центр</a>
+          <button class="btn" id="saveAllBtn">Сохранить всё в GitHub</button>
+        </div>
+      </header>
+
+      <div class="admin-grid">
+        <aside class="panel sidebar">
+          <button class="side-btn active" data-tab="branding">Оформление</button>
+          <button class="side-btn" data-tab="products">Товары</button>
+          <button class="side-btn" data-tab="delivery">Доставка</button>
+        </aside>
+
+        <div class="content-stack">
+          <section class="panel tab-panel" data-tab-panel="branding">
+            <div class="section-head compact"><h2>Оформление</h2></div>
+            <div class="field-grid two">
+              <label><span>Название сайта</span><input id="s_site_name"></label>
+              <label><span>Подзаголовок</span><input id="s_site_tagline"></label>
+              <label><span>Главный заголовок</span><input id="s_hero_title"></label>
+              <label><span>Имя основательницы</span><input id="s_founder_name"></label>
+              <label><span>Ссылка на фото основательницы</span><input id="s_founder_photo"></label>
+              <label><span>Текст о ней</span><input id="s_founder_text"></label>
+            </div>
+            <label><span>Текст на главном экране</span><textarea id="s_hero_text" rows="3"></textarea></label>
+            <label><span>Текст блока “О мастерской”</span><textarea id="s_about_text" rows="4"></textarea></label>
+            <label><span>Преимущества (каждый пункт с новой строки)</span><textarea id="s_about_list" rows="4"></textarea></label>
+            <div class="field-grid two">
+              <label><span>VK</span><input id="s_vk_url"></label>
+              <label><span>Telegram</span><input id="s_telegram_url"></label>
+              <label><span>Max</span><input id="s_max_url"></label>
+              <label><span>RuStore</span><input id="s_rustore_url"></label>
+            </div>
+            <label><span>Текст футера</span><input id="s_footer_text"></label>
+            <label><span>Факты на главном экране (каждый пункт с новой строки)</span><textarea id="s_hero_facts" rows="4"></textarea></label>
+            <label><span>Баннеры акций JSON</span><textarea id="banners_json" rows="10"></textarea></label>
+          </section>
+
+          <section class="panel tab-panel hidden" data-tab-panel="products">
+            <div class="section-head compact">
+              <h2>Товары</h2>
+              <button class="btn btn-light" id="addProductBtn">Добавить товар</button>
+            </div>
+            <div id="productsAdminList" class="admin-list"></div>
+          </section>
+
+          <section class="panel tab-panel hidden" data-tab-panel="delivery">
+            <div class="section-head compact"><h2>Доставка</h2></div>
+            <p class="muted">Зоны хранятся в GeoJSON. Каждая зона содержит имя, базовую цену и правила стоимости по сумме заказа.</p>
+            <label><span>GeoJSON зон доставки</span><textarea id="zones_json" rows="16"></textarea></label>
+            <label><span>Правила доставки JSON</span><textarea id="delivery_rules_json" rows="10"></textarea></label>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template id="productEditorTpl">
+    <article class="admin-item">
+      <div class="admin-item-head">
+        <strong class="p-title"></strong>
+        <button class="icon-btn p-remove">Удалить</button>
+      </div>
+      <div class="field-grid two">
+        <label><span>ID</span><input data-k="id"></label>
+        <label><span>Slug</span><input data-k="slug"></label>
+        <label><span>Категория</span><input data-k="category"></label>
+        <label><span>Название</span><input data-k="name"></label>
+        <label><span>Цена</span><input type="number" data-k="price"></label>
+        <label><span>Изображение URL</span><input data-k="image"></label>
+      </div>
+      <label><span>Описание</span><textarea data-k="description" rows="3"></textarea></label>
+      <label><span>Бейджи через запятую</span><input data-k="badges"></label>
+      <label><span>Опции JSON</span><textarea data-k="options" rows="5"></textarea></label>
+      <label class="check"><input type="checkbox" data-k="active"> <span>Активен</span></label>
+    </article>
+  </template>
+
+  <script src="../assets/app.js"></script>
+</body>
+</html>

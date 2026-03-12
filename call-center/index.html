@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANTROVA STUDIO — колл-центр</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="callcenter">
+  <div class="page-bg"></div>
+  <main class="shell admin-shell">
+    <section class="panel login-panel" id="ccLoginBox">
+      <p class="eyebrow">колл-центр</p>
+      <h1>Заказы</h1>
+      <p>Введите пароль администратора или оператора.</p>
+      <form id="ccLoginForm" class="auth-form">
+        <label><span>Пароль</span><input type="password" name="password" required></label>
+        <button class="btn wide" type="submit">Войти</button>
+      </form>
+    </section>
+
+    <section id="ccApp" class="hidden">
+      <header class="topbar panel admin-topbar">
+        <div>
+          <p class="eyebrow">оператор</p>
+          <h1>Колл-центр</h1>
+        </div>
+        <div class="topbar-actions">
+          <input id="orderSearch" class="search" placeholder="Поиск по номеру, имени, телефону, адресу">
+          <button class="btn btn-light" id="refreshOrdersBtn">Обновить</button>
+        </div>
+      </header>
+      <section class="panel">
+        <div id="ordersList" class="orders-list"></div>
+      </section>
+    </section>
+  </main>
+  <script src="../assets/app.js"></script>
+</body>
+</html>

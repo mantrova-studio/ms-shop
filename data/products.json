@@ -1,0 +1,48 @@
+[
+  {
+    "id": "stars-map-50x70-gold",
+    "slug": "stars-map-50x70-gold",
+    "category": "Карта звёздного неба",
+    "name": "Карта звёздного неба 50×70",
+    "description": "Персональная карта неба по дате и месту особенного события. Варианты оформления и подписи обсуждаются отдельно.",
+    "price": 2490,
+    "image": "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=900&q=80",
+    "badges": ["персональный подарок", "хит"],
+    "active": true,
+    "options": [
+      { "name": "Чёрная рамка", "price": 2490 },
+      { "name": "Белая рамка", "price": 2590 },
+      { "name": "Без рамки", "price": 2190 }
+    ]
+  },
+  {
+    "id": "alenka-photo",
+    "slug": "alenka-photo",
+    "category": "Именной шоколад Алёнка",
+    "name": "Шоколад “Алёнка” с фото",
+    "description": "Индивидуальная обложка с вашим фото и подписью. Подходит для приятного мини-подарка и дополнения к основному заказу.",
+    "price": 390,
+    "image": "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=900&q=80",
+    "badges": ["именной", "подарок"],
+    "active": true,
+    "options": [
+      { "name": "1 плитка", "price": 390 },
+      { "name": "3 плитки", "price": 990 }
+    ]
+  },
+  {
+    "id": "gypsum-unicorn-set",
+    "slug": "gypsum-unicorn-set",
+    "category": "Детские фигурки",
+    "name": "Набор гипсовых фигурок “Единорог”",
+    "description": "Набор для раскрашивания с гипсовыми фигурками и детским творческим настроением. Отлично подойдёт для подарка ребёнку.",
+    "price": 690,
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80",
+    "badges": ["для детей", "набор"],
+    "active": true,
+    "options": [
+      { "name": "Мини-набор", "price": 690 },
+      { "name": "Большой набор", "price": 1190 }
+    ]
+  }
+]

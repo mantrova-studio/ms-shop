@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "zone": "Основная зона", "base_price": 150 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[55.07,51.74],[55.16,51.74],[55.16,51.83],[55.07,51.83],[55.07,51.74]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zone": "Дальняя зона", "base_price": 250 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[55.00,51.68],[55.22,51.68],[55.22,51.90],[55.00,51.90],[55.00,51.68]]]
+      }
+    }
+  ]
+}

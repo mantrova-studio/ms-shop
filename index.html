@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANTROVA STUDIO — мастерская подарков</title>
+  <meta name="description" content="Карты звёздного неба, именной шоколад и гипсовые фигурки для детей.">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body data-page="store">
+  <div class="page-bg"></div>
+  <header class="topbar shell">
+    <a class="brand" href="./">
+      <span class="brand-mark">M</span>
+      <span>
+        <strong id="siteName">MANTROVA STUDIO</strong>
+        <small>мастерская подарков</small>
+      </span>
+    </a>
+    <nav class="topnav">
+      <a href="#about">О мастерской</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="cart-btn" id="openCartBtn">Корзина <span data-cart-count>0</span></button>
+  </header>
+
+  <main>
+    <section class="hero shell panel">
+      <div class="hero-copy">
+        <p class="eyebrow">премиальные и тёплые подарки</p>
+        <h1 id="heroTitle">Подарки с историей, нежностью и вниманием к деталям</h1>
+        <p class="lead" id="heroText">Авторские подарки для детей и взрослых: карта звёздного неба, именной шоколад и милые гипсовые наборы для творчества.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#catalog">Смотреть каталог</a>
+          <a class="btn btn-light" href="#contacts">Связаться</a>
+        </div>
+        <div class="facts" id="heroFacts"></div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" id="founderPhoto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Основательница мастерской">
+        <div class="founder-card panel-soft">
+          <div class="mini-label">основательница</div>
+          <strong id="founderName">Анастасия Мантрова</strong>
+          <p id="founderText">Создаю подарки, которые хочется сохранить на память.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section" id="bannersSection">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">акции и предложения</p>
+          <h2>Спецпредложения</h2>
+        </div>
+      </div>
+      <div class="banner-grid" id="bannerGrid"></div>
+    </section>
+
+    <section class="shell section" id="about">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">о мастерской</p>
+          <h2>Нежные подарки с персональным смыслом</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <article class="panel about-card">
+          <h3>Что мы делаем</h3>
+          <p id="aboutText">В MANTROVA STUDIO мы создаём тёплые подарки для особенных моментов — от памятной карты звёздного неба до именного шоколада и наборов для творчества детям.</p>
+        </article>
+        <article class="panel about-card">
+          <h3>Почему выбирают нас</h3>
+          <ul class="clean-list" id="aboutList">
+            <li>Индивидуальный подход к каждому заказу</li>
+            <li>Красивое оформление и премиальная подача</li>
+            <li>Удобное согласование и сопровождение заказа</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell section" id="catalog">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">каталог</p>
+          <h2>Выберите категорию</h2>
+        </div>
+      </div>
+      <div class="pills" id="categoryPills"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="shell section" id="delivery">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">доставка</p>
+          <h2>Расчёт по зоне и сумме заказа</h2>
+        </div>
+      </div>
+      <div class="delivery-grid">
+        <article class="panel">
+          <h3>Как считается доставка</h3>
+          <ol class="num-list">
+            <li>Вы указываете адрес при оформлении заказа.</li>
+            <li>Менеджер или карта определяет вашу зону доставки.</li>
+            <li>Стоимость доставки считается по выбранной зоне и сумме заказа.</li>
+          </ol>
+        </article>
+        <article class="panel">
+          <h3>Текущие правила</h3>
+          <div id="deliveryRules"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell section" id="contacts">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">контакты</p>
+          <h2>Мы всегда на связи</h2>
+        </div>
+      </div>
+      <article class="panel contacts-panel">
+        <div>
+          <h3 id="contactTitle">MANTROVA STUDIO</h3>
+          <p id="contactText">Напишите нам удобным способом — поможем подобрать подарок и оформить заказ.</p>
+        </div>
+        <div class="socials" id="socials"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <div>
+      <strong id="footerBrand">MANTROVA STUDIO</strong>
+      <p id="footerText">© MANTROVA STUDIO — мастерская подарков.</p>
+    </div>
+    <a class="footer-link" href="./admin/">Панель управления</a>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3>Корзина</h3>
+      <button class="icon-btn" id="closeCartBtn">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary panel-soft">
+        <div class="sum-row"><span>Товары</span><strong id="cartSubtotal">0 ₽</strong></div>
+        <div class="sum-row"><span>Доставка</span><strong id="cartDelivery">По зоне</strong></div>
+        <div class="sum-row total"><span>Итого</span><strong id="cartTotal">0 ₽</strong></div>
+      </div>
+      <form id="checkoutForm" class="checkout-form">
+        <h4>Оформление заказа</h4>
+        <div class="field-grid">
+          <label><span>Имя</span><input name="customer_name" required></label>
+          <label><span>Телефон</span><input name="phone" required></label>
+          <label>
+            <span>Способ связи</span>
+            <select name="contact_type">
+              <option value="telegram">Telegram</option>
+              <option value="vk">VK</option>
+              <option value="max">Max</option>
+              <option value="phone">Телефон</option>
+            </select>
+          </label>
+          <label><span>Логин / ссылка для связи</span><input name="contact_value"></label>
+        </div>
+        <label><span>Адрес доставки</span><input name="address_text" required placeholder="Улица, дом, квартира"></label>
+        <label><span>Комментарий</span><textarea name="comment" rows="3"></textarea></label>
+        <button class="btn wide" type="submit">Отправить заказ</button>
+      </form>
+    </div>
+  </aside>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
